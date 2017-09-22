@@ -11,3 +11,6 @@ function bubbleSort(arr) {
   }
   return arr
 }
+
+var arr = [-35, 1, 32, -14, 0, 44, 5, 9, 10, -2]
+selectSort(arr) // [-35, -14, -2, 0, 1, 5, 9, 10, 23, 44]
