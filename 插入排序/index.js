@@ -1,4 +1,5 @@
 function insertionSort(arr) {
+  if (!Array.isArray(arr) || arr.length < 2) return arr
   var len = arr.length
   for (var i = 1; i < len; i++) {  // 默认第0项已排序 从第1项开始
     var prevIndex = i - 1 // 初始保存当前遍历的前一项下标 后续动态改变

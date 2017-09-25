@@ -1,4 +1,5 @@
 function bubbleSort(arr) {
+  if (!Array.isArray(arr) || arr.length < 2) return arr
   var len = arr.length
   for (var i = 0; i < len; i++) {
     for (var j = 0; i< len - 1 - i; j++) { // -1是因为下面arr[j]与arr[j+1]作比较了，arr[j+1]包含了数组最后一项,所以不需要遍历到最后一项;
