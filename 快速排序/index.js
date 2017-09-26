@@ -1,5 +1,5 @@
 function quickSort(arr) {
-  if (!Array.isArray(arr) || arr.length < 2) return arr  // 递归调用至left或者right项为1项时 直接返回arr
+  if (!Array.isArray(arr) || arr.length < 2) return arr  // 递归出口 left或者right项为1项时 直接返回arr
   var pivotIndex = Math.floor(arr.length / 2)  // 算出基准下标
   var pivot = arr.splice(pivotIndex, 1)[0]  // 算出基准  并在原数组中删除基准项
   var left = []  // 存放比基准小的项
